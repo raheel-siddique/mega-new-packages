@@ -1,0 +1,165 @@
+/* * {
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: "Poor Story", cursive;
+  }
+  .Navber_Menu{
+margin-right: 15px;
+border: 1px solid black;
+padding: 7px 11px;
+border-radius: 50px;
+font-size: 25px;
+background-color: rgb(255, 187, 0);
+  }
+ .Navber_Menu_New{
+border: 1px solid black;
+padding: 7px 11px;
+border-radius: 50px;
+font-size: 25px;
+background-color: rgb(255, 187, 0);
+ }
+  .Col_1 {
+    text-shadow: 2px 2px 12px yellow;
+    font-size: 20px;
+  }
+  .Navber_Heading_Three{
+    padding-left: 30px;
+    color: #fff;
+  }
+
+  .btn_nav {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    font-weight: bolder;
+    color: #fff;
+    padding: 13px 13px 10px 13px;
+  }
+  .btn_nav:hover{
+    cursor: pointer;
+  }
+  .btn_nav_new{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #fff;
+    margin-left: 1px;
+  }
+  .Making_Footer {
+    font-family: Poor Story, cursive;
+  }
+  
+ 
+  
+ 
+  .ant-layout-sider-children{
+    width: inherit;
+    position: fixed;
+  }
+ .Header_layot{
+  background-color: rgb(0, 51, 102);
+  
+ }
+
+  .Content_Main_Row{
+    border-radius: 20px;
+    padding: 70px;
+    box-shadow: 0px 0px 15px rgb(0, 51, 102);
+  }
+  .Content_Sceond_Main_Row{
+    padding: 20px;
+    margin: 80px 0px 0px 0px;
+    background-color: rgb(250, 249, 249);
+  }
+  .Col_Text{
+    margin: auto  ;
+    padding-left: 60px;
+  }
+  .Col_Heading_Text{
+    font-size: 25px;
+  }
+.Col_Para_Text{
+  font-size: 17px;
+  padding: 25px 0px;
+}
+.Col_Sceond_Para_Text{
+  font-size: 17px;
+  padding: 15px 0px;
+}
+.Col_Button_Text{
+  padding: 10px 40px;
+  border: none;
+  font-size: 15px;
+  border-radius: 5px ;
+  cursor: pointer;
+color: white;
+box-shadow: 0px 0px 8px rgb(0, 51, 102);
+  background-color: rgb(0, 51, 102);
+  transition: 0.5s;
+}
+.Col_Button_Text:hover{
+  background-color: rgb(255, 187, 0);
+}
+.Col_Image{
+  width:100%;
+}
+.Main_Cards{
+  box-shadow: 0px 0px 8px rgb(157, 153, 153);
+  transition: 0.5s;
+}
+.Col_Sceond_Image{
+  border-radius: 100% 0% 100% 0% / 69% 56% 44% 31% ;
+  width: 100%;
+}
+
+
+
+.logo{
+  padding-top: 20px;
+}
+
+  @media only screen and (max-width: 1300px) {
+    .Second_div{
+      margin: 5px;
+    }
+    .btn_nav{
+      padding: 0px 0px ;
+      margin: 5px;
+     }
+     .Button_Main{
+      display: none;
+     }
+     .Navber_Heading_Three{
+      padding-left: 10px;
+     
+    }
+    .Navber_Menu{
+      margin-left: 0;
+    }
+  }
+
+  
+  
+  @media screen and (max-width: 799px) {
+    .Header_layot {
+        display:none;
+    }
+    .Col_Image{
+      width: 100%;
+      margin-top: 20px;
+    }
+    .Col_Text{
+      margin: auto  ;
+      padding-left:   0px;
+    }
+    .Col_Sceond_Image{
+      border-radius: 100% 0% 100% 0% / 69% 56% 44% 31% ;
+      width:100%;
+      margin-bottom: 30px;
+    }
+ } */

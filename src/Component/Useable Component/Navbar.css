@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.trigger{
+    outline: none;
+    
+}
+.Navber_Menu {
+   font-size: 25px;
+   
+   padding: 7px 10px;
+   border-radius: 50px;
+   background-color: rgb(255, 187, 0);
+}
+
+
+.Navber_Heading_Three {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 40px;
+    display: flex;
+    }
+    .main_Of_Navber{
+        margin-left: 20px;
+    }
+    .btn_nav {
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 17px;
+        font-weight: bolder;
+        color: #fff;
+        padding: 13px 13px 10px 13px;
+      }
+      .btn_nav:hover{
+        cursor: pointer;
+      }
+      .btn_nav_new{
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 20px;
+        font-weight: bolder;
+        color: #fff;
+        float: right;
+        margin-top:15px ;
+      }

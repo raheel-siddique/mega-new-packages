@@ -1,0 +1,45 @@
+.Frist_Div {
+    margin: auto;
+    background-color: rgb(255, 187, 0);
+    height: 5px;
+    width: 4%;
+    margin-top: 10px;
+  }
+  .Footer_Input {
+    width: 500px;
+    height: 45px;
+    border-radius: 0px;
+    font-size: 17px;
+    font-family: Poor Story, cursive;
+    margin-top: 35px;
+    box-shadow: 0px 0px 8px white;
+  }
+  .Footer_Four_Heading{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   }
+   
+  .Footer_Span{
+    text-decoration: none;
+    color: rgb(66, 139, 202);
+  }
+  .Footer_Span:hover{
+    color: rgb(255, 187, 0);
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .Second_div{
+    background-color: rgb(0, 38, 76);
+    padding: 18px 20px;
+    border-radius: 50px;
+    font-size: 17px;
+    margin: 20px;
+    margin-top:60px ;
+    
+  }
+  .Second_div:hover{
+    background-color: rgb(255, 187, 0);
+    cursor: pointer;
+  }

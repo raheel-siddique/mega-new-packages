@@ -1,0 +1,6 @@
+.Managment_Main_Row{
+    box-shadow: 0px 0px 8px rgb(241, 241, 241);
+    border-radius: 10px;
+    padding: 20px;
+    /* overflow-y:scroll ; */
+}

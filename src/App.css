@@ -1,0 +1,43 @@
+.list_side_menu_nav{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    margin-top: 30px;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-style: oblique;
+   gap: 20px;
+    /* font-size: 20px; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+li{
+    color: #ffffff;
+    transition: 0.5s;
+
+}
+
+.list_menu{
+   
+  gap: 10px;
+  width: 90%;
+  padding: 10px;
+    
+}
+.list_menu:hover{
+    background-color: rgb(255, 187, 0);
+    
+}
+.active_list_menu{
+    background-color: rgb(0, 51, 102) ;
+    border-radius: 10px;
+    margin: 5px;
+    width: 90%;
+    padding: 10px;
+}
+.active_list_menu:active{
+    background-color: rgb(255, 187, 0);
+}
