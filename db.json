@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "userName": "raheel",
+      "userAge": "10",
+      "userClass": "matirc",
+      "userSubject": "chemsitry"
+    },
+    {
+      "id": 2,
+      "userName": "rafay",
+      "userAge": "11",
+      "userClass": "matirc",
+      "userSubject": "chemsitry"
+    },
+    {
+      "id": 3,
+      "userName": "aman",
+      "userAge": "12",
+      "userClass": "matirc",
+      "userSubject": "chemsitry"
+    },
+    {
+      "id": 4,
+      "userName": "daniyal",
+      "userAge": "13",
+      "userClass": "matirc",
+      "userSubject": "chemsitry"
+    },
+    {
+      "userName": "rasim",
+      "userAge": "22",
+      "userClass": "matric",
+      "userSubject": "physics",
+      "id": 5
+    },
+    {
+      "userName": "raheel",
+      "userAge": "dndksmfdmsm",
+      "userClass": "matric",
+      "userSubject": "dnmsnfmsd",
+      "id": 6
+    },
+    {
+      "userName": "new user",
+      "userAge": "dndksmfdmsm",
+      "userClass": "dmmdasda",
+      "userSubject": "physics",
+      "id": 7
+    },
+    {
+      "userName": "samad",
+      "userAge": "12",
+      "userClass": "eight",
+      "userSubject": "physics",
+      "id": 8
+    },
+    {
+      "userName": "new aman",
+      "userAge": "22",
+      "userClass": "msdkjsfmddsjfksjd",
+      "userSubject": "kldmklsfkms",
+      "id": 9
+    },
+    {
+      "userName": "new rafay",
+      "userAge": "dndksmfdmsm",
+      "userClass": "dmmdasda",
+      "userSubject": "physics",
+      "id": 10
+    },
+    {
+      "userName": "new raheel",
+      "userAge": "kajkd",
+      "userClass": "mmf",
+      "userSubject": "lkdskd",
+      "id": 11
+    },
+    {
+      "userName": "aman",
+      "userAge": "dndksmfdmsm",
+      "userClass": "dmmdasda",
+      "userSubject": "dnmsnfmsd",
+      "id": 12
+    }
+  ]
+}
