@@ -1,17 +1,50 @@
-import { Button, Col, Input, Row, Select } from "antd";
+import { Button, Col, Form, Input, Row, Select,message } from "antd";
 import { Option } from "antd/es/mentions";
-import React from "react";
-import { Link } from "react-router-dom";
+import axios from "axios";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import "./Regestration.css";
 
 function Regestration() {
+  const navigate=useNavigate()
+  const [messageApi, contextHolder] = message.useMessage();
+  const [loadUser,setLoadUser]=useState(false)
+
+  const handleSubmit=async(values)=>{
+    try{
+      setLoadUser(true)
+      const respUser=await axios.post('http://localhost:3001/users', {
+        userName:values.userName,
+        userAge:values.userAge,
+        userClass:values.userClass,
+         userSubject:values.userSubject
+
+      })
+      messageApi.open({
+        type: 'success',
+        content: 'User Has been Added Successfully',
+      });
+      setLoadUser(false)
+
+      setTimeout(()=>{
+        navigate('/user-list')
+
+    },1000)
+    }catch(dfbfhdmnfdghddj){
+      messageApi.open({
+        type: 'error',
+        content: 'something went wrong',
+      });
+    }
+  }
   return (
     <>
-   
+   {contextHolder}
       <Row >
       <Link to="/user-list">
         <Button style={{width:200 ,float:'right'}}>Register</Button>
         </Link>
+        <Form style={{width:'100%'}} onFinish={handleSubmit}>
         <Col lg={24} className="">
           <Row
             style={{
@@ -27,6 +60,7 @@ function Regestration() {
             <Col lg={11}>
                 
               <h1 style={{margin:5,fontSize:20 ,fontFamily: "Poor Story, cursive",}}>Regestration Form</h1>
+             <Form.Item name='userName'>
               <Input
                 placeholder="User_Name"
                 type="User"
@@ -37,72 +71,11 @@ function Regestration() {
                   borderRadius: 10,
                 }}
               />
-              <Input
-                placeholder="First_Name"
-                type="First_Name"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="Mobile_No"
-                type="Phone Number"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="Email"
-                type="Email"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="Insta"
-                type="Insta "
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-            </Col>
-            <Col lg={11} style={{marginTop:32}}>
-              <Input
-                placeholder="Date_Of_Birth"
-                type="Date"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="Family_Name"
-                type="First_Name"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
+              </Form.Item>
+             <Form.Item name='userAge'>
 
               <Input
-                placeholder="Password"
-                type="Password"
+                placeholder="Age"
                 style={{
                   margin: 10,
                   backgroundColor: "rgba(201, 223, 246, 0.081)",
@@ -110,9 +83,11 @@ function Regestration() {
                   borderRadius: 10,
                 }}
               />
+              </Form.Item>
+             <Form.Item name='userClass'>
+
               <Input
-                placeholder="Confirm_Password"
-                type="Confirm Password"
+                placeholder="Class"
                 style={{
                   margin: 10,
                   backgroundColor: "rgba(201, 223, 246, 0.081)",
@@ -120,125 +95,27 @@ function Regestration() {
                   borderRadius: 10,
                 }}
               />
+              </Form.Item>
+             <Form.Item name='userSubject'>
+
+              <Input
+                placeholder="Subject"
+                style={{
+                  margin: 10,
+                  backgroundColor: "rgba(201, 223, 246, 0.081)",
+                  height: 40,
+                  borderRadius: 10,
+                }}
+              />
+              </Form.Item>
+              <Button block type='primary' htmlType="submit">Register</Button>
             </Col>
           </Row>
-        </Col>
-
-
-
-
-
-
-        <Col lg={24}>
-        <Row
-            style={{
-              display: "flex",
-              padding: 20,
-              borderRadius: 10,
-              justifyContent: "space-around",
-              boxShadow: " 0px 0px 5px gainsboro",
-            }}
-            className="Main_Row_Of_Sceond_Regestration"
-          >
-            <Col lg={11}>
-              <h1 style={{margin:5,fontSize:20 ,fontFamily: "Poor Story, cursive",}}>Address Infromation</h1>
-              <Input
-                placeholder="Address"
-                type="Address"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="Building Number"
-                type="Building Number"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="Street"
-                type="Street"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="District"
-                type="District "
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-            </Col>
-            <Col lg={11} style={{marginTop:32}}>
-              <Input
-                placeholder="Your City"
-                type="City"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="ZipCode"
-                type="ZipCode"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-
-              <Input
-                placeholder="Your Role"
-                type="Your Role"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-              <Input
-                placeholder="Your Gender"
-                type="Your Gender"
-                style={{
-                  margin: 10,
-                  backgroundColor: "rgba(201, 223, 246, 0.081)",
-                  height: 40,
-                  borderRadius: 10,
-                }}
-              />
-            </Col>
-          </Row>
-            </Col>
+        </Col>    
+        </Form>
       </Row>
 
 
-      <Row style={{marginLeft:170 ,marginRight:210}} >
-        <Col lg={20}>
-        <Input placeholder="Massage" type="Massage" style={{width:350 ,margin:20}}/>
-        </Col>
-        <Col lg={4}>
-            
-        </Col>
-      </Row>
       
     </>
   );

@@ -16,6 +16,7 @@ const Managment = () => {
 
 
 
+
   const [usersData, setUsersData]=useState([
   
   ])
@@ -139,7 +140,6 @@ const handleEditSubjectChange=(e)=>{
   }
   setGetEditData(copyEditData)
 }
-
   return (
     <>
     {/* modal add user */}
@@ -220,7 +220,7 @@ const handleEditSubjectChange=(e)=>{
        <h2>User Managment</h2>
         </Col> 
         <Col lg={12}>
-        <Input placeholder="Search" className="changing_size" prefix={<SearchOutlined style={{color:'gainsboro',textIndent:5}}/>}/>
+        <Input placeholder="Search"  className="changing_size" prefix={<SearchOutlined style={{color:'gainsboro',textIndent:5}}/>}/>
         </Col> 
         <Col lg={3}>
       
